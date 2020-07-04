@@ -11,6 +11,7 @@ import {IoChildComponent} from './modules/input-output/io-child/io-child.compone
 import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component';
 import {CcListComponent} from './modules/content-children/cc-list/cc-list.component';
 import {CcItemComponent} from './modules/content-children/cc-item/cc-item.component';
+import { ViewChildComponent } from './modules/view-child/view-child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CcItemComponent} from './modules/content-children/cc-item/cc-item.compon
     IoChildComponent,
     CcAppComponent,
     CcListComponent,
-    CcItemComponent
+    CcItemComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,

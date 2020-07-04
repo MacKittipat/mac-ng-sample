@@ -4,6 +4,7 @@ import {TemplateSyntaxComponent} from './modules/template-syntax/template-syntax
 import {MainComponent} from './modules/main/main.component';
 import {IoParentComponent} from './modules/input-output/io-parent/io-parent.component';
 import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component';
+import {ViewChildComponent} from './modules/view-child/view-child.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'template-syntax', component: TemplateSyntaxComponent},
   {path: 'input-output', component: IoParentComponent},
   {path: 'content-children', component: CcAppComponent},
+  {path: 'view-child', component: ViewChildComponent},
 ];
 
 @NgModule({
