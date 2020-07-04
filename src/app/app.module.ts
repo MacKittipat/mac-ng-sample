@@ -12,6 +12,8 @@ import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component
 import {CcListComponent} from './modules/content-children/cc-list/cc-list.component';
 import {CcItemComponent} from './modules/content-children/cc-item/cc-item.component';
 import { ViewChildComponent } from './modules/view-child/view-child.component';
+import { VcsAppComponent } from './modules/view-children/vcs-app/vcs-app.component';
+import { VcsItemComponent } from './modules/view-children/vcs-item/vcs-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ViewChildComponent } from './modules/view-child/view-child.component';
     CcAppComponent,
     CcListComponent,
     CcItemComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    VcsAppComponent,
+    VcsItemComponent
   ],
   imports: [
     BrowserModule,

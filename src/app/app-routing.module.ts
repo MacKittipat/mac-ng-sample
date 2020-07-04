@@ -5,6 +5,7 @@ import {MainComponent} from './modules/main/main.component';
 import {IoParentComponent} from './modules/input-output/io-parent/io-parent.component';
 import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component';
 import {ViewChildComponent} from './modules/view-child/view-child.component';
+import {VcsAppComponent} from './modules/view-children/vcs-app/vcs-app.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'input-output', component: IoParentComponent},
   {path: 'content-children', component: CcAppComponent},
   {path: 'view-child', component: ViewChildComponent},
+  {path: 'view-children', component: VcsAppComponent},
 ];
 
 @NgModule({
