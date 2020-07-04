@@ -1,0 +1,55 @@
+<h2>template-syntax</h2>
+
+<h4>
+  Property Binding
+</h4>
+<div>
+  <div>
+    <input value="{{title}}">
+  </div>
+  <div>
+    <input [value]="title">
+  </div>
+</div>
+
+<h4>
+  Attribute Binding
+</h4>
+<div>
+  <div>
+    <span [attr.id]="title" [attr.title]="title">{{title}}</span>
+  </div>
+</div>
+
+<h4>
+  Class Binding
+</h4>
+<div>
+  <div>
+    <span [class.red]="isRed">{{title}}</span>
+  </div>
+  <div>
+    <span [ngClass]="myClasses()">{{title}}</span>
+  </div>
+  <div>
+    <span [ngClass]="'red'">{{title}}</span>
+  </div>
+</div>
+
+<h4>
+  Style Binding
+</h4>
+<div>
+  <div>
+    <span [style.color]="'blue'">{{title}}</span>
+  </div>
+  <div>
+    <span [ngStyle]="myStyles">{{title}}</span>
+  </div>
+  <div>
+    <span [ngStyle]="{'color':'purple'}">{{title}}</span>
+  </div>
+</div>
+
+
+

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mac-ng-sample"
+    }
+  },
+  "defaultProject": "mac-ng-sample",
+  "cli": {
+    "analytics": false
+  }
 }
