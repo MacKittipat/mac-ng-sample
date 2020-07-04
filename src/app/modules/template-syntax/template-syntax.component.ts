@@ -9,6 +9,7 @@ import {Customer} from '../../models/customer';
 export class TemplateSyntaxComponent implements OnInit {
 
   title: string;
+  name: string;
   customer: Customer;
   isRed: false;
   myStyles = {
@@ -20,6 +21,7 @@ export class TemplateSyntaxComponent implements OnInit {
 
   ngOnInit(): void {
     this.title = 'Hello World';
+    this.name = 'What is your name ? ';
     this.customer = {
       id: 1,
       name: 'Mac'
@@ -31,6 +33,11 @@ export class TemplateSyntaxComponent implements OnInit {
       red: true,
       blue: true
     };
+  }
+
+  changeColor($event): void {
+    console.log($event);
+    console.log($event.target.innerText);
   }
 
 }

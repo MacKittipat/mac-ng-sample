@@ -51,5 +51,43 @@
   </div>
 </div>
 
+<h4>
+  Two-way Binding
+</h4>
+<div>
+  <div>
+    {{name}}
+  </div>
+  <div>
+    <input [(ngModel)]="name" >
+  </div>
+  <br>
+  <div>
+    {{customer.name}}
+  </div>
+  <div>
+    <input [(ngModel)]="customer.name" >
+  </div>
+</div>
 
+<h4>
+  Event Binding
+</h4>
+<div>
+  <div>
+    <button (click)="changeColor($event)">Click Me</button>
+  </div>
+</div>
 
+<h4>
+  Local variable
+</h4>
+<div>
+  <input #txtName style="color: blue" value="My name is Mac">
+  <div>
+    {{txtName.value}}
+  </div>
+  <div>
+    {{txtName.style.color}}
+  </div>
+</div>
