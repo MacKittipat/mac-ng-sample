@@ -8,6 +8,9 @@ import {MainComponent} from './modules/main/main.component';
 import {FormsModule} from '@angular/forms';
 import {IoParentComponent} from './modules/input-output/io-parent/io-parent.component';
 import {IoChildComponent} from './modules/input-output/io-child/io-child.component';
+import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component';
+import {CcListComponent} from './modules/content-children/cc-list/cc-list.component';
+import {CcItemComponent} from './modules/content-children/cc-item/cc-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import {IoChildComponent} from './modules/input-output/io-child/io-child.compone
     TemplateSyntaxComponent,
     MainComponent,
     IoParentComponent,
-    IoChildComponent
+    IoChildComponent,
+    CcAppComponent,
+    CcListComponent,
+    CcItemComponent
   ],
   imports: [
     BrowserModule,
