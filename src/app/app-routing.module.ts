@@ -6,6 +6,7 @@ import {IoParentComponent} from './modules/input-output/io-parent/io-parent.comp
 import {CcAppComponent} from './modules/content-children/cc-app/cc-app.component';
 import {ViewChildComponent} from './modules/view-child/view-child.component';
 import {VcsAppComponent} from './modules/view-children/vcs-app/vcs-app.component';
+import {ReactiveFormComponent} from './modules/reactive-form/reactive-form.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'content-children', component: CcAppComponent},
   {path: 'view-child', component: ViewChildComponent},
   {path: 'view-children', component: VcsAppComponent},
+  {path: 'reactive-form', component: ReactiveFormComponent},
 ];
 
 @NgModule({

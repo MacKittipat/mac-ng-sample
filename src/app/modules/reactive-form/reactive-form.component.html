@@ -1,0 +1,60 @@
+<h2>Reactive-Form</h2>
+
+<h4>
+  Basic Form
+</h4>
+<div>
+  <div>
+    Name : <input type="text" [formControl]="nameForm">
+  </div>
+  <div>
+    {{nameForm.value}}
+  </div>
+</div>
+
+<h4>
+  Grouping Form
+</h4>
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmitUser()">
+    <div>
+      <label>
+        First Name:
+        <input type="text" formControlName="firstName">
+      </label>
+    </div>
+    <div>
+      <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<h4>
+  Form Builder
+</h4>
+<div>
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmitCustomer(customerForm.value)">
+    <div>
+      <label>
+        First Name:
+        <input type="text" formControlName="id">
+      </label>
+    </div>
+    <div>
+      <label>
+        Last Name:
+        <input type="text" formControlName="name">
+      </label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
