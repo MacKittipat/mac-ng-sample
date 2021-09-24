@@ -15,6 +15,8 @@ import { ViewChildComponent } from './modules/view-child/view-child.component';
 import { VcsAppComponent } from './modules/view-children/vcs-app/vcs-app.component';
 import { VcsItemComponent } from './modules/view-children/vcs-item/vcs-item.component';
 import { ReactiveFormComponent } from './modules/reactive-form/reactive-form.component';
+import {MacButtonModule} from 'mac-button';
+import { LibraryComponent } from './modules/library/library.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { ReactiveFormComponent } from './modules/reactive-form/reactive-form.com
     ViewChildComponent,
     VcsAppComponent,
     VcsItemComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MacButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
