@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { IoParentComponent } from './io-parent.component';
 
@@ -6,7 +6,7 @@ describe('IoParentComponent', () => {
   let component: IoParentComponent;
   let fixture: ComponentFixture<IoParentComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ IoParentComponent ]
     })
